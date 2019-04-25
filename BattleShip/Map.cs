@@ -36,7 +36,7 @@ namespace BattleShip
 				while (y < Dimension)
 				{
 
-					mapString += "[ ? ] ";
+					mapString += "[ - ] ";
 					y++;
 				}
 
