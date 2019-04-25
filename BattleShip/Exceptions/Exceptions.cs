@@ -33,14 +33,14 @@ namespace BattleShip.Exceptions
 		}
 	}
 
-	class ShipPartException : BattleShipException
+	class ShipPartOutOfBoundsException : BattleShipException
 	{
-		public ShipPartException() : base("A ShipPart Exception has occurred")
+		public ShipPartOutOfBoundsException() : base("A ShipPart Exception has occurred")
 		{
 
 		}
 
-		public ShipPartException(string message) : base(message)
+		public ShipPartOutOfBoundsException(string message) : base(message)
 		{
 
 		}
