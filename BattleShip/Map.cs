@@ -19,10 +19,34 @@ namespace BattleShip
 		public bool IsOnMap(Point point)
 		{
 			return 
-				point.X < this.Dimension &&
+				point.X < Dimension &&
 				point.X >= 0 &&
-				point.Y < this.Dimension &&
+				point.Y < Dimension &&
 				point.Y >= 0;
+		}
+
+		public string PrintMap()
+		{
+			int x = 0;
+			int y = 0;
+			string mapString = "";
+
+			while(x < Dimension)
+			{
+				while (y < Dimension)
+				{
+
+					mapString += "[ ? ] ";
+					y++;
+				}
+
+				mapString += "\r\n";
+				y = 0;
+				x++;
+
+			}
+
+			return mapString;
 		}
 
 	}
