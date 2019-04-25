@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace BattleShip
 {
-	class Program
+	class Point
 	{
-		static void Main(string[] args)
+		public int X { get; }
+		public int Y { get; }
+
+		public Point(int x, int y)
 		{
-
-			Map map = new Map(3);
-
-
-			Console.WriteLine("Press any key to exit");
-			Console.ReadKey();
+			X = x;
+			Y = y;
 		}
 	}
 }
