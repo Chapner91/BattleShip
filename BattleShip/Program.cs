@@ -13,7 +13,7 @@ namespace BattleShip
 
 			Map map = new Map(5);
 			Console.WriteLine(map.PrintMap());
-
+		
 			Console.WriteLine("Press any key to exit");
 			Console.ReadKey();
 		}

@@ -10,12 +10,20 @@ namespace BattleShip
 	{
 		public int Dimension { get; }
 
-
+		/// <summary>
+		/// constructor for a new map
+		/// </summary>
+		/// <param name="dimension">this int is the length of the x and y axis of the map</param>
 		public Map(int dimension)
 		{
 			Dimension = dimension;
 		}
 
+		/// <summary>
+		/// returns true if the Point is within the boundaries of the Map
+		/// </summary>
+		/// <param name="point">The point object being to check</param>
+		/// <returns></returns>
 		public bool IsOnMap(Point point)
 		{
 			return 
