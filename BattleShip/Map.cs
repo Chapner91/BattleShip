@@ -35,11 +35,11 @@ namespace BattleShip
 
 		public string PrintMap()
 		{
-			int x = 0;
+			int x = Dimension;
 			int y = 0;
 			string mapString = "";
 
-			while(x < Dimension)
+			while(x > 0)
 			{
 				while (y < Dimension)
 				{
@@ -50,7 +50,7 @@ namespace BattleShip
 
 				mapString += "\r\n";
 				y = 0;
-				x++;
+				x--;
 
 			}
 
